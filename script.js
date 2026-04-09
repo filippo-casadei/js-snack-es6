@@ -36,4 +36,17 @@ const tutteLeBici = [
 },
 ];
 
-console.log(tutteLeBici[0]);
+console.log(tutteLeBici);
+
+// Creo una variabile vuota usando let perchè il valore verrà modificato.
+let biciLeggera = tutteLeBici[0];
+
+// Scorro l'array con un ciclo for.
+for (let i = 1; i < tutteLeBici.length; i++) {
+    if (tutteLeBici[i].peso < biciLeggera.peso) {
+        biciLeggera = tutteLeBici[i];
+    }
+};
+
+// Stampo in console.log
+console.log(`La bici più leggera è la ${biciLeggera.nome} e pesa ${biciLeggera.peso} kg`);
