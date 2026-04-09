@@ -34,9 +34,19 @@ const squadreDiClacio = [
 
 // Ciclo dentro ad un for le squadre di calcio per assegnare valori random a punti fatti
 // e falli subiti
+let nuovoArray = [];
 
 for ( let i = 0; i < squadreDiClacio.length; i++) {
         squadreDiClacio[i].puntiFatti = (Math.floor (Math.random() * 100 ) +1)
         squadreDiClacio[i].falliSubiti = (Math.floor (Math.random() * 100 ) +1)
-    
+        nuovoArray.push(
+            {
+                "nome" : squadreDiClacio[i].nome,
+                "puntiFatti" : squadreDiClacio[i].puntiFatti,
+                "falliSubiti" : squadreDiClacio[i].falliSubiti
+            }
+        )
 };
+
+console.log(nuovoArray);
+
