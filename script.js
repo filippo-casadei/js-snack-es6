@@ -35,3 +35,5 @@ const tutteLeBici = [
 
 },
 ];
+
+console.log(tutteLeBici[0]);
